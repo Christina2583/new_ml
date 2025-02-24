@@ -3,11 +3,11 @@ import mlflow.pytorch
 import torch
 from transformers import AutoModel, AutoTokenizer
 
-
-mlflow.set_experiment("DeepSeek_Coder_Experiments")
+mlflow.set_experiment("DeepSeek_Experiments")
 
 
 model_name = "deepseek-ai/deepseek-coder-6.7b"
+model ="deepseek-ai"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name)
 
